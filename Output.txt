@@ -1,0 +1,100 @@
+\python.exe c:/Users/Halle/ML_Theropods.py
+<class 'pandas.DataFrame'>
+RangeIndex: 103 entries, 0 to 102
+Data columns (total 3 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   Length in m      103 non-null    float64
+ 1   Hip height in m  99 non-null     float64
+ 2   Body mass in kg  103 non-null    float64
+dtypes: float64(3)
+memory usage: 2.5 KB
+None
+                 Length in m  Hip height in m  Body mass in kg
+Length in m         1.000000         0.987054         0.875691
+Hip height in m     0.987054         1.000000         0.881787
+Body mass in kg     0.875691         0.881787         1.000000
+
+Missing values
+Length in m        0
+Hip height in m    4
+Body mass in kg    0
+dtype: int64
+
+Correlation matrix
+                 Length in m  Body mass in kg
+Length in m         1.000000         0.875691
+Body mass in kg     0.875691         1.000000
+['Hip height in m']
+     Hip height in m
+0              0.920
+1              0.150
+2              0.070
+3              1.550
+4              0.300
+..               ...
+98             0.089
+99             2.650
+100            2.000
+101            0.102
+102            0.090
+
+[103 rows x 1 columns]
+
+df_3 after knn
+     Hip height in m
+0              0.920
+1              0.150
+2              0.070
+3              1.550
+4              0.300
+..               ...
+98             0.089
+99             2.650
+100            2.000
+101            0.102
+102            0.090
+
+[103 rows x 1 columns]
+
+
+Hip height in m    0
+dtype: int64
+
+df
+     Length in m  Hip height in m  Body mass in kg
+0          3.000            0.920           83.000
+1          0.500            0.150            0.110
+2          0.185            0.070            0.018
+3          5.300            1.550          360.000
+4          1.000            0.300            1.300
+..           ...              ...              ...
+98         0.200            0.089            0.119
+99         9.500            2.650         2000.000
+100        7.700            2.000          780.000
+101        0.234            0.102            0.175
+102        0.190            0.090            0.040
+
+[103 rows x 3 columns]
+
+
+Length in m        0
+Hip height in m    0
+Body mass in kg    0
+dtype: int64
+
+
+<class 'pandas.DataFrame'>
+RangeIndex: 103 entries, 0 to 102
+Data columns (total 2 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   Body mass in kg           103 non-null    float64
+ 1   Length / Hip height in m  103 non-null    float64
+dtypes: float64(2)
+memory usage: 1.7 KB
+None
+
+                          Body mass in kg  Length / Hip height in m
+Body mass in kg                  1.000000                  0.395206
+Length / Hip height in m         0.395206                  1.000000
